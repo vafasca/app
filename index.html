@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#FF69B4" />
+    <meta name="description" content="Una novela visual interactiva sobre el amor, las decisiones y el crecimiento personal. Disponible en Español y Ruso." />
+    <meta name="keywords" content="visual novel, novela visual, romance, interactive story, love story, game" />
+    <meta name="author" content="Flores, Gatitos y Shawarma" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Flores, Gatitos y Shawarma" />
+    <meta property="og:description" content="Una novela visual interactiva sobre el amor y las decisiones" />
+    <meta property="og:image" content="/assets/backgrounds/room_birthday.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Flores, Gatitos y Shawarma" />
+    <meta property="twitter:description" content="Una novela visual interactiva sobre el amor y las decisiones" />
+    <meta property="twitter:image" content="/assets/backgrounds/room_birthday.jpg" />
+    
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/assets/backgrounds/room_birthday.jpg" />
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <title>Flores, Gatitos y Shawarma 🌸🐱🌯</title>
+    
+    <style>
+      /* Critical CSS for loading */
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #FFD6E8, #FFC0CB);
+        min-height: 100vh;
+      }
+      #root {
+        min-height: 100vh;
+      }
+      .loading-fallback {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        font-family: 'Poppins', sans-serif;
+        color: #5B3750;
+      }
+      .loading-fallback h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .loading-spinner {
+        font-size: 3rem;
+        animation: spin 2s linear infinite;
+      }
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="loading-fallback">
+        <div class="loading-spinner">🌸</div>
+        <h1>Cargando...</h1>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

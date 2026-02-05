@@ -1,0 +1,493 @@
+{
+  "start": "intro",
+  "characters": {
+    "india": { "name_es": "El chico indio", "name_ru": "Индийский парень", "image": "assets/characters/india_boy.png" },
+    "pakistan": { "name_es": "El chico de Pakistán", "name_ru": "Пакистанский парень", "image": "assets/characters/pakistan_boy.png" },
+    "japan": { "name_es": "El chico japonés", "name_ru": "Японский парень", "image": "assets/characters/japan_boy.png" },
+    "russia": { "name_es": "El chico ruso", "name_ru": "Русский парень", "image": "assets/characters/russia_boy.png" },
+    "peru": { "name_es": "Bruno", "name_ru": "Бруно", "image": "assets/characters/peru_boy.png" },
+    "couple_future": { "name_es": "Nosotros", "name_ru": "Мы", "image": "assets/characters/couple_future.png" },
+    "narrator": { "name_es": "Narrador", "name_ru": "Рассказчик", "image": "" }
+  },
+  "nodes": {
+    "intro": {
+      "title": "Cumpleaños 18",
+      "background": "assets/backgrounds/room_birthday.jpg",
+      "text_es": "Hoy cumples 18 años. En la mesa hay un ramo de flores frescas, un gatito naranja curioseando entre los regalos, y el aroma tentador de un shawarma recién comprado. Tu corazón late con fuerza mientras recuerdas historias pasadas... momentos que marcaron tu vida y personas que dejaron huella. Algunas heridas aún duelen, pero también aprendiste a reconocer el amor verdadero cuando llegó.",
+      "text_ru": "Сегодня тебе исполняется 18 лет. На столе стоит букет свежих цветов, рыжий котёнок любопытно нюхает подарки, и витает соблазнительный аромат свежей шавермы. Твоё сердце сильно бьётся, когда ты вспоминаешь прошлые истории... моменты, которые изменили твою жизнь, и людей, которые оставили след. Некоторые раны всё ещё болят, но ты также научилась узнавать настоящую любовь, когда она пришла.",
+      "choices": [
+        { "text_es": "Recordar al chico indio... y cómo me abandonó", "text_ru": "Вспомнить индийского парня... и как он меня бросил", "next": "india_1" },
+        { "text_es": "Pensar en el chico de Pakistán... que nunca me valoró", "text_ru": "Подумать о пакистанском парне... который никогда не ценил меня", "next": "pakistan_1" },
+        { "text_es": "Volver a hablar con el chico japonés... que solo me usaba", "text_ru": "Снова поговорить с японским парнем... который просто использовал меня", "next": "japan_1" },
+        { "text_es": "Recordar al chico ruso... que nunca me protegió", "text_ru": "Вспомнить русского парня... который никогда не защищал меня", "next": "russia_1" },
+        { "text_es": "Quedarme con Bruno de Perú... mi amor verdadero", "text_ru": "Остаться с Бруно из Перу... моя настоящая любовь", "next": "peru_1" }
+      ]
+    },
+
+    "pakistan_1": {
+      "title": "El chico de Pakistán - Siempre en Segundo Lugar",
+      "background": "assets/backgrounds/pakistan_street.jpg",
+      "character": "pakistan",
+      "text_es": "El chico de Pakistán... sus ojos avellana te miraban con cariño, pero nunca con prioridad. Recuerdas claramente esa noche en que lloraste en tu habitación, sintiéndote invisible mientras él pasaba horas en videollamada con sus amigos, riendo y bromeando, mientras tú esperabas una simple respuesta a tu mensaje. 'Son solo amigos', decía. Pero tú sabías la verdad: para él, siempre serías segunda opción. Un día, le contaste algo personal y triste, y él solo respondió con comentarios estúpidos, sin importarle tu dolor. Terminaron y volvieron varias veces, pero siempre te dejaba con la sensación de que no eras suficiente.",
+      "text_ru": "Пакистанский парень... его карие глаза смотрели на тебя с нежностью, но никогда с приоритетом. Ты ясно помнишь ту ночь, когда плакала в своей комнате, чувствуя себя невидимой, пока он часами был в видеозвонке с друзьями, смеялся и шутил, пока ты ждала простого ответа на своё сообщение. 'Они просто друзья', — говорил он. Но ты знала правду: для него ты всегда будешь вторым выбором.",
+      "choices": [
+        { "text_es": "Ver qué pasaría si me quedaba con el chico de Pakistán...", "text_ru": "Увидеть, что было бы, если бы я осталась с пакистанским парнем...", "next": "pakistan_future_1" },
+        { "text_es": "Recordar cuando me dijo que sus amigos eran más importantes", "text_ru": "Вспомнить, когда он сказал, что друзья важнее", "next": "pakistan_pain", "effects": { "confianza": -5 } },
+        { "text_es": "Volver al presente", "text_ru": "Вернуться в настоящее", "next": "intro" }
+      ]
+    },
+
+    "pakistan_pain": {
+      "title": "El Día que Rompió Mi Corazón",
+      "background": "assets/backgrounds/pakistan_garden.jpg",
+      "character": "pakistan",
+      "text_es": "Fue un día especialmente difícil para ti. Habías estado lidiando con algo personal, algo que te hacía sentir vulnerable. Así que llamaste a El chico de Pakistán por videollamada, esperando que te escuchara, que te apoyara, que te dijera que todo estaría bien. Pero en lugar de eso, solo hizo comentarios estúpidos. 'Jajaja, eso es ridículo', decía, burlándose de tus sentimientos. Cuando le dijiste que estabas siendo serio, él simplemente cambió de tema para hablar de sus amigos, de las chicas que conocía, de todo menos de ti. En ese momento, supiste que nunca sería tu refugio. Que para él, tus problemas eran irrelevantes. Y lo peor... lo peor fue que en esa misma semana, descubriste que había estado hablando con otras chicas. Mensajes flirteadores, conversaciones que iban más allá de lo que un novio debería permitir. Cuando le confrontaste, sus respuestas fueron las mismas: 'Son solo amigas. No eres posesiva, ¿verdad?' Pero tú sabías la verdad. Nunca fuiste su prioridad, nunca lo fuiste.",
+      "text_ru": "Это был особенно тяжёлый день для тебя. Ты сталкивалась с чем-то личным, чем-то, что заставляло тебя чувствовать себя уязвимой. Поэтому ты позвонила Пакистанский пареньу по видеозвонку, надеясь, что он тебя послушает, что поддержит, что скажет, что всё будет хорошо. Но вместо этого он только делал глупые комментарии. 'Хахаха, это смешно', — говорил он, издеваясь над твоими чувствами. Когда ты сказала, что говоришь серьёзно, он просто сменил тему, чтобы говорить о своих друзьях, о девушках, которых он знал, о всём, кроме тебя. В тот момент ты поняла, что он никогда не будет твоим приютом. Что для него твои проблемы были неуместны. И самое худшее... самое худшее было в том, что на той же неделе ты обнаружила, что он общается с другими девушками. Флиртующие сообщения, разговоры, которые выходили за пределы того, что должен допускать парень. Когда ты его конфронтировала, его ответы были теми же: 'Они просто подруги. Ты не ревнива, правда?' Но ты знала правду. Ты никогда не была его приоритетом, никогда ею не была.",
+      "choices": [
+        { "text_es": "Ver qué hubiera pasado si me quedaba...", "text_ru": "Увидеть, что было бы, если бы я осталась...", "next": "pakistan_future_1" },
+        { "text_es": "Recordar cómo me sentía con su familia", "text_ru": "Вспомнить, как я чувствовала себя с его семьёй", "next": "pakistan_family", "effects": { "autonomia": -5 } },
+        { "text_es": "Volver atrás", "text_ru": "Вернуться назад", "next": "pakistan_1" }
+      ]
+    },
+
+    "pakistan_family": {
+      "title": "La Distancia Que No Era Solo Física",
+      "background": "assets/backgrounds/pakistan_home.jpg",
+      "character": "pakistan",
+      "text_es": "Eran en una relación a distancia. El chico de Pakistán vivía en Pakistán, y tú... tú estabas aquí, esperando. Noches de videollamadas donde él a menudo estaba 'ocupado' o 'cansado'. Semanas donde sus respuestas a tus mensajes eran cortas, frías. Y encima de todo eso, estaban sus amigos. Siempre sus amigos. Mientras tú esperabas en tu habitación, él estaba en reuniones, en salidas, en películas con chicas que supuestamente eran 'solo amigas', nunca te defendió. Después de eso, siempre encontraba excusas para no presentarte formalmente a su padre. 'Mi familia es complicada', decía, como si eso fuera una excusa válida. Pero tú sabías la verdad: tú no eras importante en su vida. La distancia se convirtió en la excusa perfecta para no comprometerse realmente, para seguir teniendo su libertad, para poder hablar con otras sin que tú pudieras hacer nada.",
+      "text_ru": "Вы были в отношениях на расстоянии. Пакистанский парень жил в Пакистане, а ты... ты была здесь, ждала. Ночи видеозвонков, где он часто был 'занят' или 'уставал'. Недели, когда его ответы на твои сообщения были короткие, холодные. И поверх всего этого, были его друзья. Всегда его друзья. Пока ты ждала в своей комнате, он был на встречах, на прогулках, на кино с девушками, которые якобы были 'просто подругами'. Ты познакомилась с его семьёй один раз по видеозвонку. Его мать осмотрела тебя с ног до головы с неодобрением, бормоча что-то на урду, что Пакистанский парень никогда тебе не перевёл. Он нервно рассмеялся, сменил тему и никогда тебя не защитил. После этого он всегда находил оправдания, чтобы не представить тебя официально его отцу. 'Моя семья сложная', — говорил он, как будто это было оправданием. Но ты знала правду: ты не была важна в его жизни. Расстояние стало идеальным предлогом для того, чтобы не брать реальные обязательства, чтобы сохранить свободу, чтобы иметь возможность общаться с другими без последствий.",
+      "choices": [
+        { "text_es": "Ver qué pasaría si me quedaba con él...", "text_ru": "Увидеть, что было бы, если бы я осталась с ним...", "next": "pakistan_future_1" },
+        { "text_es": "Volver al presente, agradecida de haberlo dejado", "text_ru": "Вернуться в настоящее, благодарная, что бросила его", "next": "intro", "effects": { "autonomia": 10 } }
+      ]
+    },
+
+    "pakistan_future_1": {
+      "title": "El Futuro que No Quise",
+      "background": "assets/backgrounds/pakistan_street.jpg",
+      "character": "pakistan",
+      "text_es": "Si te hubieras quedado con El chico de Pakistán en esa relación a distancia... Los años habrían pasado y seguirías esperando. Esperando que eligiera la videollamada contigo en lugar de salir con otras chicas. Esperando que valorara tus sentimientos en lugar de burlarse de ellos. Esperando un 'lo siento' que nunca llegaría por todas las veces que hablaba con otras, por todas las veces que no estaba cuando más lo necesitabas. Terminarían y volverían juntos una y otra vez, en un ciclo interminable. Cada ruptura sería dolorosa. Cada reconciliación sería falsa, basada en promesas que nunca cumpliría. La distancia se convirtió en su escudo perfecto. 'Es difícil estar lejos', diría cuando lo confrontaras sobre las otras chicas. Como si la distancia fuera una excusa para traicionarte. Sus amigos seguirían siendo más importantes que tú. La noche en que le contaste algo triste, sus comentarios estúpidos se repetirían en tu mente durante años. 'Podría haber estado ahí para ti', pensarías, 'pero ni siquiera estaba ahí emocionalmente.' El futuro con El chico de Pakistán habría sido un futuro de espera, de dolor, de ciclos de ruptura y reconciliación que te destrozarían lentamente.",
+      "text_ru": "Если бы ты осталась с Пакистанский пареньом в этих отношениях на расстоянии... Годы бы прошли, и ты бы всё ещё ждала. Ждала, что он выберет видеозвонок с тобой вместо выхода с другими девушками. Ждала, что он ценит твои чувства вместо того, чтобы издеваться над ними. Ждала 'извини' которое никогда не придёт за все те времена, когда он общался с другими, за все те времена, когда его не было, когда ты нуждалась в нём больше всего. Вы бы расставались и вновь сходились снова и снова, в бесконечном цикле. Каждое расставание было бы болезненным. Каждая примирение была бы фальшивой, основанной на обещаниях, которые он никогда не выполнит. Расстояние стало бы его идеальным щитом. 'Сложно быть далеко', — говорил бы он, когда ты бы его конфронтировала о других девушках. Как будто расстояние — оправдание для предательства. Его друзья всё ещё были бы важнее чем ты. Ночь, когда ты рассказала ему что-то грустное, его глупые комментарии повторялись бы в твоём разуме годами. 'Я могла бы быть рядом с тобой', — думала бы ты, 'но он даже эмоционально не был рядом.' Будущее с Пакистанский пареньом было бы будущим ожидания, боли, циклов расставания и примирения, которые медленно разрывали бы тебя.",
+      "choices": [
+        { "text_es": "Continuar viendo ese futuro triste...", "text_ru": "Продолжить видеть это грустное будущее...", "next": "pakistan_future_2" },
+        { "text_es": "Volver al presente, a salvo", "text_ru": "Вернуться в настоящее, в безопасности", "next": "intro", "effects": { "autonomia": 15 } }
+      ]
+    },
+
+    "pakistan_future_2": {
+      "title": "Años de Ciclos Rotos",
+      "background": "assets/backgrounds/pakistan_home.jpg",
+      "character": "pakistan",
+      "text_es": "Cinco años después del primer ciclo de ruptura y reconciliación... Estás sentada en la misma habitación, mirando tu teléfono. El chico de Pakistán acaba de regresar a la relación después de terminar hace dos meses. Dice que las cosas serán diferentes esta vez. Pero ya has escuchado eso antes. Hace poco, descubriste más conversaciones con otras chicas. Cuando lo confrontaste, él dijo lo mismo: 'Son solo amigas. No confías en mí.' Y eso te hizo sentir culpable, como si tú fueras el problema. Has aprendido a no esperar, a no ilusionarte, a no pedir. Tu juventud se desvaneció en estos ciclos de ruptura y reconciliación. Ahora tienes 23 años, has roto y vuelto con él innumerables veces, y todavía no sientes que seas suficiente. El número de veces que lo perdonaste por hablar con otras, por no estar emocionalmente presente cuando más lo necesitabas, por sus comentarios estúpidos cuando compartías tus miedos... todo eso pesa en tu corazón como una piedra. ¿Cuántas reconciliaciones necesitarás para entender que esto nunca cambiará?",
+      "text_ru": "Пять лет после первого цикла расставания и примирения... Ты сидишь в той же комнате, глядя в свой телефон. Пакистанский парень только что вернулся в отношения после того, как расстались два месяца назад. Он говорит, что на этот раз всё будет по-другому. Но ты уже слышала это раньше. Недавно ты обнаружила ещё разговоры с другими девушками. Когда ты его конфронтировала, он сказал то же самое: 'Они просто подруги. Ты мне не доверяешь.' И это заставило тебя чувствовать себя виноватой, как будто ты — проблема. Ты научилась не ждать, не надеяться, не просить. Твоя молодость угасала в этих циклах расставания и примирения. Теперь тебе 23, ты разошлась и сошлась с ним бесчисленное количество раз, и ты всё ещё не чувствуешь, что достаточно. Количество раз, когда ты прощала его за общение с другими, за его отсутствие эмоциональной поддержки, когда ты нуждалась в нём больше всего, за его глупые комментарии, когда ты делилась своими страхами... всё это давит на твоё сердце, как камень. Сколько примирений тебе нужно, чтобы понять, что это никогда не изменится?",
+      "choices": [
+        { "text_es": "Ver el final de esa historia...", "text_ru": "Увидеть конец этой истории...", "next": "pakistan_future_end" },
+        { "text_es": "Volver al presente, donde soy feliz", "text_ru": "Вернуться в настоящее, где я счастлива", "next": "intro", "effects": { "autonomia": 20 } }
+      ]
+    },
+
+    "pakistan_future_end": {
+      "title": "El Final de los Ciclos",
+      "background": "assets/backgrounds/future_place.jpg",
+      "text_es": "A los 25 años, después de siete años de relación, de innumerables rupturas y reconciliaciones, El chico de Pakistán finalmente te dejó. Y esta vez, no fue una ruptura temporal. Se fue con una de las chicas con las que había estado hablando. La misma que te había negado, la misma que te dijo que eran 'solo amigas'. Cuando lo descubriste, sentiste una frialdad que nunca habías experimentado. Siete años. Siete años de esperas, de lágrimas, de ciclos sin fin, de perdón sin fin, de noches en videollamada esperando que te prestara atención... todo para terminar siendo dejada por alguien que supuestamente eran 'solo una amiga'. La noche en que le contaste algo triste, cuando él solo hizo comentarios estúpidos y tú sentiste que morías por dentro... eso te persiguió. Debería haber terminado allí. Debería haber visto la realidad: que nunca fue suficiente para él, que sus amigos importaban más, que otras chicas importaban más. Siete años reducidos a lecciones de dolor. Pero aquí estás, en tu cumpleaños 18, mirando hacia atrás, dándote cuenta de que podrías haber sido ahorrada de todo ese sufrimiento. Todavía puedes elegir diferente. Todavía puedes ser feliz.",
+      "text_ru": "В 25 лет, после семи лет отношений, множественных расставаний и примирений, Пакистанский парень наконец бросил тебя. И на этот раз, это не было временным расставанием. Он ушёл с одной из девушек, с которой общался. Той же самой, которую отрицал, той же самой, которую назвал 'просто подругой'. Когда ты это обнаружила, ты почувствовала холод, которого никогда не испытывала. Семь лет. Семь лет ожиданий, слёз, бесконечных циклов, бесконечного прощения, ночей в видеозвонках в ожидании его внимания... всё это закончилось тем, что её оставила та, которую он якобы 'просто подруга'. Ночь, когда ты рассказала ему что-то грустное, когда он только сделал глупые комментарии и ты почувствовала, что умираешь внутри... это преследовало тебя. Это должно было закончиться там. Ты должна была увидеть реальность: что ты никогда не была достаточна для него, что его друзья имели значение больше, что другие девушки имели значение больше. Семь лет сведены к урокам боли. Но вот ты здесь, в свой 18-й день рождения, оглядываясь назад, понимая, что ты могла бы избежать всех этих страданий. Ты всё ещё можешь выбрать иначе. Ты всё ещё можешь быть счастливой.",
+      "end": true
+    },
+
+    "india_1": {
+      "title": "El chico indio - Abandono en el Peor Momento",
+      "background": "assets/backgrounds/india_street.jpg",
+      "character": "india",
+      "text_es": "El chico indio... con su sonrisa encantadora y sus promesas vacías. Recuerdas ese día como si fuera ayer. Estabas pasando por el momento más difícil de tu vida, estabas deprimida, llorando cada noche. Y él... él simplemente desapareció. 'Necesito espacio', dijo. 'Esto es muy intenso para mí.' Mientras tú lloraba la pérdida de alguien que amabas, él no pudo soportar 'lo intenso' de tus emociones. Te dejó sola cuando más lo necesitabas.",
+      "text_ru": "Индийский мальчик... с его очаровательной улыбкой и пустыми обещаниями. Ты помнишь тот день, как будто это было вчера. Ты переживала самый тяжелый период в своей жизни, была в депрессии, плакала каждую ночь. А он... он просто исчез. «Мне нужно пространство», — сказал он. «Это слишком тяжело для меня». Пока ты оплакивала потерю любимого человека, он не мог справиться с силой твоих эмоций. Он оставил тебя одну, когда ты больше всего в нем нуждалась.",
+      "choices": [
+        { "text_es": "Ver qué pasaría si me quedaba con el chico indio...", "text_ru": "Увидеть, что было бы, если бы я осталась с Индийский пареньом...", "next": "india_future_1" },
+        { "text_es": "Recordar cómo me sentí abandonada", "text_ru": "Вспомнить, как я чувствовала себя брошенной", "next": "india_abandoned", "effects": { "confianza": -10 } },
+        { "text_es": "Volver al presente", "text_ru": "Вернуться в настоящее", "next": "intro" }
+      ]
+    },
+
+    "india_abandoned": {
+      "title": "Sola en la Oscuridad",
+      "background": "assets/backgrounds/india_rain.jpg",
+      "character": "india",
+      "text_es": "Esas noches... Dios, esas noches fueron las peores. Llorabas hasta quedarte dormida, y cuando despertabas, lo primero que hacías era revisar tu teléfono, esperando un mensaje de él. Pero nada. Días pasaron. Una semana. Dos. Él sabía lo que estabas pasando, lo sabía, y aun así eligió abandonarte. 'No sé cómo manejar el duelo', dijo cuando finalmente respondió. Como si el duelo fuera algo que se 'maneja', como si tus sentimientos fueran una carga que él no quería cargar.",
+      "text_ru": "Те ночи… Боже, те ночи были ужасными. Ты плакала, пока не засыпала, а когда просыпалась, первым делом проверяла телефон, надеясь на сообщение от него. Но ничего. Проходили дни. Неделя. Две. Он знал, через что ты проходишь, он знал, и все же он решил тебя бросить. «Я не знаю, как справиться с горем», — сказал он, наконец ответив. Как будто горе было чем-то, с чем нужно «справляться», как будто твои чувства были бременем, которое он не хотел нести.",
+      "choices": [
+        { "text_es": "Ver qué pasaría si me quedaba...", "text_ru": "Увидеть, что было бы, если бы я осталась...", "next": "india_future_1" },
+        { "text_es": "Recordar cuando volvió a buscarme", "text_ru": "Вспомнить, когда он вернулся за мной", "next": "india_return", "effects": { "confianza": -5 } },
+        { "text_es": "Volver atrás", "text_ru": "Вернуться назад", "next": "india_1" }
+      ]
+    },
+
+    "india_return": {
+      "title": "Demasiado Tarde",
+      "background": "assets/backgrounds/india_home.jpg",
+      "character": "india",
+      "text_es": "Tres meses después, el chico indio volvió. 'Lo siento', dijo. 'Estaba confundido. Necesitaba tiempo.' Pero para ese momento, ya habías conocido a alguien más. Alguien que no te abandonó cuando más lo necesitabas. Alguien que se quedó contigo en tus noches más oscuras, que te escuchó llorar, que te abrazó cuando temblabas. Cuando le dijiste al chico indio que ya no estabas disponible, que habías encontrado a alguien que realmente te amaba, no podía creerlo. 'Pero te amo', dijo. Demasiado tarde. El amor verdadero no abandona.",
+      "text_ru": "Три месяца спустя Индийский парень вернулся. 'Прости', — сказал он. 'Я был растерян. Мне нужно было время.' Но к тому моменту ты уже встретила кого-то другого. Кого-то, кто не бросил тебя, когда ты нуждалась в нём больше всего. Кого-то, кто остался с тобой в твои самые тёмные ночи, кто слушал твои слёзы, кто обнимал тебя, когда ты дрожала. Когда ты сказала Индийский пареньу, что ты больше не свободна, что нашла того, кто по-настоящему тебя любит, он не мог поверить. 'Но я люблю тебя', — сказал он. Слишком поздно. Настоящая любовь не бросает.",
+      "choices": [
+        { "text_es": "Ver qué pasaría si hubiera vuelto con él...", "text_ru": "Увидеть, что было бы, если бы я вернулась к нему...", "next": "india_future_1" },
+        { "text_es": "Recordar mi felicidad actual, casi 1 año de relación", "text_ru": "Вспомнить моё текущее счастье, почти год отношений", "next": "india_current_love", "effects": { "confianza": 15, "complicidad": 15 } }
+      ]
+    },
+
+    "india_current_love": {
+      "title": "Amor Verdadero",
+      "background": "assets/backgrounds/future_place.jpg",
+      "text_es": "Ahora, casi un año después, estás con alguien que nunca te ha abandonado. Alguien que cuando estás triste, no dice 'necesito espacio', sino 'estoy aquí contigo'. Alguien que te hace sentir prioridad, no carga. Cuando piensas en el chico indio, no sientes nostalgia... sientes alivio. Alivio de haber escapado de alguien que te habría dejado sola una y otra vez. Tu amor actual es real, es presente, es seguro. Y eso no tiene precio.",
+      "text_ru": "Сейчас, почти год спустя, ты с тем, кто никогда не бросал тебя. С тем, кто когда тебе грустно, не говорит 'мне нужно пространство', а говорит 'я здесь с тобой'. С тем, кто заставляет тебя чувствовать себя приоритетом, а не бременем. Когда ты думаешь об Индийский паренье, ты не чувствуешь ностальгии... ты чувствуешь облегчение. Облегчение от того, что сбежала от того, кто бросал бы тебя одну снова и снова. Твоя текущая любовь реальна, она здесь, она безопасна. И это бесценно.",
+      "end": true
+    },
+
+    "india_future_1": {
+      "title": "El Ciclo de Abandono",
+      "background": "assets/backgrounds/india_street.jpg",
+      "character": "india",
+      "text_es": "Si hubieras vuelto con el chico indio... El patrón se habría repetido. La próxima vez que estuvieras enferma, deprimida, o simplemente necesitaras apoyo emocional, él habría desaparecido de nuevo. 'Es que no sé cómo lidiar con esto', diría. Y tú habrías aprendido a sufrir en silencio, a ocultar tus emociones, a no 'ser demasiado' para no asustarlo. Habrías construido una relación donde solo importaba su comodidad, donde tus necesidades eran 'demasiado intensas'. Una prisión de silencio y soledad.",
+      "text_ru": "Если бы ты вернулась к Индийский пареньу... Паттерн повторился бы. В следующий раз, когда ты заболеешь, впадёшь в депрессию или просто нуждаешься в эмоциональной поддержке, он снова исчез бы. 'Просто я не знаю, как с этим справляться', — сказал бы он. И ты бы научилась страдать в тишине, скрывать свои эмоции, не быть 'слишком', чтобы не пугать его. Ты бы построила отношения, где важен только его комфорт, где твои потребности 'слишком интенсивны'. Тюрьма тишины и одиночества.",
+      "choices": [
+        { "text_es": "Continuar viendo ese futuro...", "text_ru": "Продолжить видеть это будущее...", "next": "india_future_2" },
+        { "text_es": "Volver al presente, a salvo", "text_ru": "Вернуться в настоящее, в безопасности", "next": "intro", "effects": { "autonomia": 15 } }
+      ]
+    },
+
+    "india_future_2": {
+      "title": "Años de Silencio",
+      "background": "assets/backgrounds/india_home.jpg",
+      "character": "india",
+      "text_es": "Cinco años después... Estás en terapia. Tu terapeuta te ayuda a entender que no eres 'demasiado intensa', que tus emociones son válidas, que mereces a alguien que te sostenga cuando caes. Pero los daños ya están hechos. Pasaste años con el chico indio aprendiendo a reprimirte, a disculparte por sentir, a ser pequeña para que él se sintiera cómodo. Ahora, a los 23, estás reconstruyéndote. Pero imagina si nunca hubieras vuelto con él... imagina si hubieras elegido el amor que te sostiene, no el que te abandona.",
+      "text_ru": "Пять лет спустя... Ты в терапии. Твой терапевт помогает тебе понять, что ты не 'слишком интенсивная', что твои эмоции валидны, что ты заслуживаешь того, кто поддержит тебя, когда ты падаешь. Но ущерб уже нанесён. Ты провела годы с Индийский пареньом, учась подавлять себя, извиняться за чувства, быть маленькой, чтобы ему было комфортно. Теперь, в 23, ты перестраиваешься. Но представь, если бы ты никогда не возвращалась к нему... представь, если бы ты выбрала любовь, которая тебя поддерживает, а не бросает.",
+      "choices": [
+        { "text_es": "Ver el final de esa historia...", "text_ru": "Увидеть конец этой истории...", "next": "india_future_end" },
+        { "text_es": "Volver al presente, donde soy feliz", "text_ru": "Вернуться в настоящее, где я счастлива", "next": "intro", "effects": { "autonomia": 20 } }
+      ]
+    },
+
+    "india_future_end": {
+      "title": "El Final Solitario",
+      "background": "assets/backgrounds/future_place.jpg",
+      "text_es": "A los 26 años, el chico indio te dejó. No porque no te amara, sino porque nunca aprendió a amar de verdad. 'Eres demasiado para mí', dijo. 'Necesito a alguien más fácil.' Después de ocho años de relación, de sacrificar tus emociones por su comodidad, de ser 'menos' para que él pudiera soportarte... te dejó porque necesitaba 'algo más fácil'. Pero aquí estás, en tu cumpleaños 18, con la oportunidad de elegir diferente. De elegir a alguien que te ame completa, intensa, real. Alguien que nunca te abandone.",
+      "text_ru": "В 26 лет Индийский парень бросил тебя. Не потому, что не любил тебя, а потому, что так и не научился по-настоящему любить. 'Ты слишком для меня', — сказал он. 'Мне нужно кто-то попроще.' После восьми лет отношений, жертвования своими эмоциями ради его комфорта, быть 'меньше', чтобы он мог тебя выносить... он бросил тебя, потому что ему нужно было 'что-то попроще'. Но вот ты здесь, в свой 18-й день рождения, с возможностью выбрать иначе. Выбрать того, кто полюбит тебя целую, интенсивную, реальную. Того, кто никогда тебя не бросит.",
+      "end": true
+    },
+
+    "japan_1": {
+      "title": "El chico japonés - La Máscara del Orden",
+      "background": "assets/backgrounds/japan_street.jpg",
+      "character": "japan",
+      "text_es": "El chico japonés... aparentemente perfecto. Ordenado, educado, siempre decía las palabras correctas. Pero detrás de esa fachada de caballero japonés, había algo oscuro. Al principio fueron comentarios 'inocentes' sobre tu cuerpo. Luego, peticiones de fotos 'solo para él'. Cuando le decías que no, se enojaba. 'No confías en mí', decía, haciéndote sentir culpable. Pero las fotos nunca eran suficientes. Siempre quería más. Más revelador. Más explícito. Te usaba para su propia satisfacción, sin importar cómo te hiciera sentir.",
+      "text_ru": "Японский парень... кажущийся идеальным. Опрятный, вежливый, всегда говорил правильные слова. Но за этой фасадой японского джентльмена было что-то тёмное. Сначала это были 'невинные' комментарии о твоём теле. Потом просьбы фото 'только для него'. Когда ты говорила нет, он злился. 'Ты мне не доверяешь', — говорил он, заставляя тебя чувствовать вину. Но фото никогда не было достаточно. Он всегда хотел больше. Более откровенно. Более явно. Он использовал тебя для собственного удовлетворения, не важно, как ты себя чувствовала.",
+      "choices": [
+        { "text_es": "Ver qué pasaría si me quedaba con El chico japonés...", "text_ru": "Увидеть, что было бы, если бы я осталась с Японский парень...", "next": "japan_future_1" },
+        { "text_es": "Recordar cómo me presionaba", "text_ru": "Вспомнить, как он давил на меня", "next": "japan_pressure", "effects": { "confianza": -10 } },
+        { "text_es": "Volver al presente", "text_ru": "Вернуться в настоящее", "next": "intro" }
+      ]
+    },
+
+    "japan_pressure": {
+      "title": "Manipulación y Culpa",
+      "background": "assets/backgrounds/japan_cafe.jpg",
+      "character": "japan",
+      "text_es": "'Si me amaras, lo harías', decía El chico japonés. Esa frase... cuántas veces la escuchaste. Te hacía sentir culpable por tener límites, por querer respeto, por no querer ser un objeto para su consumo. Cuando le negabas algo, se enfriaba, dejaba de hablarte por horas, días. Y tú, desesperada por su atención, cedías. Una y otra vez. Cada vez un poco más. Cada vez perdiendo un pedazo de ti misma. Hasta que un día miraste al espejo y no reconociste a la persona que habías become.",
+      "text_ru": "'Если бы ты любила меня, ты бы сделала это', — говорил Японский парень. Эта фраза... сколько раз ты её слышала. Он заставлял тебя чувствовать вину за то, что у тебя есть границы, за то, что ты хочешь уважения, за то, что ты не хочешь быть объектом для его потребления. Когда ты ему отказывала, он становился холодным, переставал с тобой разговаривать на часы, дни. А ты, отчаянно желая его внимания, уступала. Снова и снова. Каждый раз чуть больше. Каждый раз теряя кусочек себя. Пока однажды ты не посмотрела в зеркало и не узнала человека, которым стала.",
+      "choices": [
+        { "text_es": "Ver qué pasaría si me quedaba...", "text_ru": "Увидеть, что было бы, если бы я осталась...", "next": "japan_future_1" },
+        { "text_es": "Recordar cómo me sentí usada", "text_ru": "Вспомнить, как я чувствовала себя использованной", "next": "japan_used", "effects": { "autonomia": -10 } },
+        { "text_es": "Volver atrás", "text_ru": "Вернуться назад", "next": "japan_1" }
+      ]
+    },
+
+    "japan_used": {
+      "title": "Un Objeto, No una Persona",
+      "background": "assets/backgrounds/japan_home.jpg",
+      "character": "japan",
+      "text_es": "Con El chico japonés, nunca fuiste una persona con sentimientos, sueños y necesidades. Fuiste un objeto de placer. Cuando quería hablar de sus cosas, ahí estabas. Cuando tú necesitabas hablar de tus problemas, 'estaba ocupado' o 'no estaba de humor'. Las conversaciones siempre giraban en torno a él, a sus deseos, a sus necesidades. Tu único valor era lo que podías ofrecerle físicamente. Tu mente, tu corazón, tus emociones... no importaban. Solo tu cuerpo. Solo tu obediencia. Solo tu silencio.",
+      "text_ru": "С Японский парень ты никогда не была человеком с чувствами, мечтами и потребностями. Ты была объектом удовольствия. Когда он хотел говорить о своих вещах, ты была там. Когда тебе нужно было поговорить о своих проблемах, он был 'занят' или 'не в настроении'. Разговоры всегда вращались вокруг него, его желаний, его потребностей. Твоя единственная ценность — это то, что ты могла предложить ему физически. Твой разум, твоё сердце, твои эмоции... не имели значения. Только твоё тело. Только твоё повиновение. Только твой молчание.",
+      "choices": [
+        { "text_es": "Ver qué pasaría si me quedaba con él...", "text_ru": "Увидеть, что было бы, если бы я осталась с ним...", "next": "japan_future_1" },
+        { "text_es": "Volver al presente, libre", "text_ru": "Вернуться в настоящее, свободной", "next": "intro", "effects": { "autonomia": 15 } }
+      ]
+    },
+
+    "japan_future_1": {
+      "title": "La Prisión Dorada",
+      "background": "assets/backgrounds/japan_street.jpg",
+      "character": "japan",
+      "text_es": "Si te hubieras quedado con El chico japonés... Los años habrían pasado y tú habrías perdido cada vez más de ti misma. Él habría seguido presionándote, manipulándote, usando tu amor como arma contra ti. Habrías aprendido a no decir 'no', a no tener límites, a existir solo para su placer. Tu autoestima habría quedado destruida. Tu identidad, borrada. Serías una sombra de la persona que una vez fuiste, atrapada en una jaula dorada de apariencia perfecta pero vacía por dentro.",
+      "text_ru": "Если бы ты осталась с Японский парень... Годы бы прошли, и ты бы теряла всё больше и больше себя. Он бы продолжал давить на тебя, манипулировать тобой, использовать твою любовь как оружие против тебя. Ты бы научилась не говорить 'нет', не иметь границ, существовать только для его удовольствия. Твоя самооценка была бы разрушена. Твоя личность — стёрта. Ты была бы тенью того человека, которым когда-то была, запертой в золотой клетке идеального внешнего вида, но пустой внутри.",
+      "choices": [
+        { "text_es": "Continuar viendo ese futuro oscuro...", "text_ru": "Продолжить видеть это тёмное будущее...", "next": "japan_future_2" },
+        { "text_es": "Volver al presente, a salvo", "text_rу": "Вернуться в настоящее, в безопасности", "next": "intro", "effects": { "autonomia": 15 } }
+      ]
+    },
+
+    "japan_future_2": {
+      "title": "La Mujer que Perdí",
+      "background": "assets/backgrounds/japan_home.jpg",
+      "character": "japan",
+      "text_es": "Cinco años después... Miras fotos de ti misma antes de conocer a El chico japonés. Esa chica sonriente, llena de vida, con sueños y esperanzas... ya no existe. Ahora eres alguien que no reconoce sus propios límites, que acepta cualquier trato con tal de mantener la 'paz', que ha olvidado cómo es ser respetada. El chico japonés sigue ahí, sigue controlando, sigue usando. Y tú... tú sigues cediendo. Porque olvidaste que mereces algo mejor. Pero aquí, en tu cumpleaños 18, todavía puedes elegir recordarlo.",
+      "text_ru": "Пять лет спустя... Ты смотришь фотографии себя до знакомства с Японский парень. Эта улыбающаяся девушка, полная жизни, с мечтами и надеждами... больше не существует. Теперь ты та, кто не узнаёт свои собственные границы, кто принимает любое обращение ради 'мира', кто забыла, каково это — быть уважаемой. Японский парень всё ещё там, всё ещё контролирует, всё ещё использует. А ты... ты всё ещё уступаешь. Потому что забыла, что заслуживаешь чего-то лучшего. Но здесь, в твой 18-й день рождения, ты всё ещё можешь выбрать вспомнить это.",
+      "choices": [
+        { "text_es": "Ver el final de esa historia...", "text_ru": "Увидеть конец этой истории...", "next": "japan_future_end" },
+        { "text_es": "Volver al presente, donde soy respetada", "text_ru": "Вернуться в настоящее, где меня уважают", "next": "intro", "effects": { "autonomia": 20 } }
+      ]
+    },
+
+    "japan_future_end": {
+      "title": "El Vacío",
+      "background": "assets/backgrounds/future_place.jpg",
+      "text_es": "A los 24 años, El chico japonés te dejó. No por otra persona, sino porque ya no eras 'suficiente'. 'Necesito algo más emocionante', dijo. Después de seis años de usar tu cuerpo, tu mente, tu alma... te descartó como un objeto viejo. Te dejó vacía, rota, sin identidad. Pero aquí estás, en tu cumpleaños 18, con el poder de elegir un camino diferente. De elegir a alguien que te vea como persona, no como objeto. Alguien que te respete, te cuide, te ame de verdad.",
+      "text_ru": "В 24 года Японский парень бросил тебя. Не из-за другой, а потому что ты была уже 'недостаточно'. 'Мне нужно что-то более захватывающее', — сказал он. После шести лет использования твоего тела, твоего разума, твоей души... он выбросил тебя как старый предмет. Он оставил тебя пустой, сломанной, без личности. Но вот ты здесь, в свой 18-й день рождения, с силой выбрать другой путь. Выбрать того, кто видит в тебе человека, а не объект. Того, кто уважает тебя, заботится о тебе, по-настоящему тебя любит.",
+      "end": true
+    },
+
+    "russia_1": {
+      "title": "El chico ruso - Cerca pero Lejos",
+      "background": "assets/backgrounds/russia_street.jpg",
+      "character": "russia",
+      "text_es": "El chico ruso fue diferente... él estaba físicamente cerca. No era una relación a distancia como las otras. Podías verlo, tocarlo, abrazarlo. Pero a pesar de la cercanía física, nunca te hizo sentir segura. Cuando caminaban juntos por las calles de San Petersburgo y alguien te miraba de forma inapropiada, él no decía nada. Cuando sus amigos hacían comentarios sobre ti, se reía con ellos. 'Son solo bromas', decía. Pero tú necesitabas un protector, un defensor, alguien que dijera 'ella está conmigo, respétala'. Eso nunca llegó.",
+      "text_ru": "Михаил был другим... он был физически рядом. Это не были отношения на расстоянии, как другие. Ты могла видеть его, трогать его, обнимать его. Но несмотря на физическую близость, он никогда не заставлял тебя чувствовать себя в безопасности. Когда вы гуляли по улицам Санкт-Петербурга и кто-то смотрел на тебя неприлично, он ничего не говорил. Когда его друзья делали комментарии о тебе, он смеялся с ними. 'Это просто шутки', — говорил он. Но тебе нужен был защитник, тот, кто сказал бы 'она со мной, уважайте её'. Этого никогда не случилось.",
+      "choices": [
+        { "text_es": "Ver qué pasaría si me quedaba con El chico ruso...", "text_ru": "Увидеть, что было бы, если бы я осталась с Русский парень...", "next": "russia_future_1" },
+        { "text_es": "Recordar cuando no me defendió", "text_ru": "Вспомнить, когда он меня не защитил", "next": "russia_no_defense", "effects": { "confianza": -10 } },
+        { "text_es": "Volver al presente", "text_ru": "Вернуться в настоящее", "next": "intro" }
+      ]
+    },
+
+    "russia_no_defense": {
+      "title": "Sola en Público",
+      "background": "assets/backgrounds/russia_cafe.jpg",
+      "character": "russia",
+      "text_es": "Fue en una fiesta con sus amigos. Uno de ellos, borracho, empezó a decir cosas inapropiadas sobre ti. Miraste a El chico ruso, esperando que dijera algo, que te defendiera, que pusiera un alto. Pero él solo se rió y dijo: 'No seas celosa, es solo Vanya siendo Vanya.' Sentiste cómo te encogías por dentro, cómo te hacías pequeña, cómo aprendías que con él, nunca estarías protegida. Que su comodidad social era más importante que tu dignidad.",
+      "text_ru": "Это было на вечеринке с его друзьями. Один из них, пьяный, начал говорить неприличные вещи о тебе. Ты посмотрела на Михаила, ожидая, что он что-то скажет, защитит тебя, остановит это. Но он просто рассмеялся и сказал: 'Не ревнуй, это просто Ваня будучи Ваней.' Ты почувствовала, как съёжилась внутри, как стала маленькой, как поняла, что с ним ты никогда не будешь защищена. Что его социальный комфорт важнее твоего достоинства.",
+      "choices": [
+        { "text_es": "Ver qué pasaría si me quedaba...", "text_ru": "Увидеть, что было бы, если бы я осталась...", "next": "russia_future_1" },
+        { "text_es": "Recordar cómo me sentí expuesta", "text_ru": "Вспомнить, как я чувствовала себя уязвимой", "next": "russia_exposed", "effects": { "confianza": -5 } },
+        { "text_es": "Volver atrás", "text_ru": "Вернуться назад", "next": "russia_1" }
+      ]
+    },
+
+    "russia_exposed": {
+      "title": "Sin Escudo",
+      "background": "assets/backgrounds/russia_home.jpg",
+      "character": "russia",
+      "text_es": "Con El chico ruso, siempre tuviste que defenderte sola. En el metro, cuando alguien se te acercaba demasiado. En la calle, cuando alguien te decía algo grosero. En las reuniones, cuando sus amigos cruzaban la línea. Él estaba ahí, físicamente presente, pero emocionalmente ausente. Nunca tomó tu mano más fuerte, nunca te apartó de una situación incómoda, nunca dijo 'basta'. Te dejó sola en un mundo que a veces es cruel con las mujeres. Y esa soledad... dolía más que la distancia.",
+      "text_ru": "С Русский парень тебе всегда приходилось защищаться самой. В метро, когда кто-то подходил слишком близко. На улице, когда кто-то говорил тебе что-то грубое. На встречах, когда его друзья переходили черту. Он был там, физически присутствовал, но эмоционально отсутствовал. Он никогда не сжимал твою руку сильнее, никогда не уводил тебя из неудобной ситуации, никогда не говорил 'достаточно'. Он оставил тебя одну в мире, который иногда бывает жесток к женщинам. И это одиночество... болело больше, чем расстояние.",
+      "choices": [
+        { "text_es": "Ver qué pasaría si me quedaba con él...", "text_ru": "Увидеть, что было бы, если бы я осталась с ним...", "next": "russia_future_1" },
+        { "text_es": "Volver al presente, protegida", "text_ru": "Вернуться в настоящее, под защитой", "next": "intro", "effects": { "confianza": 15 } }
+      ]
+    },
+
+    "russia_future_1": {
+      "title": "La Soledad de la Cercanía",
+      "background": "assets/backgrounds/russia_street.jpg",
+      "character": "russia",
+      "text_es": "Si te hubieras quedado con El chico ruso... Los años habrían pasado y seguirías sintiéndote sola, a pesar de tenerlo al lado. Cada situación incómoda, cada comentario inapropiado, cada momento donde necesitabas un defensor... él habría estado ausente. Habrías aprendido a no esperar protección, a ser tu propia guardiana, a no confiar en que él te cuidaría. Estarías en una relación donde físicamente comparten espacio, pero emocionalmente estás completamente sola.",
+      "text_ru": "Если бы ты осталась с Русский парень... Годы бы прошли, и ты бы всё ещё чувствовала себя одинокой, несмотря на то, что он рядом. Каждая неудобная ситуация, каждый неприличный комментарий, каждый момент, когда тебе нужен был защитник... он был бы отсутствующим. Ты бы научилась не ждать защиты, быть своей собственной хранительницей, не доверять тому, что он позаботится о тебе. Ты была бы в отношениях, где физически вы делите пространство, но эмоционально ты совершенно одна.",
+      "choices": [
+        { "text_es": "Continuar viendo ese futuro...", "text_ru": "Продолжить видеть это будущее...", "next": "russia_future_2" },
+        { "text_es": "Volver al presente, segura", "text_ru": "Вернуться в настоящее, в безопасности", "next": "intro", "effects": { "confianza": 15 } }
+      ]
+    },
+
+    "russia_future_2": {
+      "title": "Años de Silencio",
+      "background": "assets/backgrounds/russia_home.jpg",
+      "character": "russia",
+      "text_es": "Cinco años después... Estás en terapia, tratando de entender por qué te sientes tan sola estando acompañada. Tu terapeuta te ayuda a ver que una relación sin protección emocional es peor que la soledad. Con El chico ruso, aprendiste a no pedir ayuda, a no mostrar vulnerabilidad, a no esperar que él te defienda. Te convertiste en una fortaleza, sí, pero una fortaleza solitaria. Y a los 24 años, te das cuenta de que mereces ser protegida, cuidada, amada de forma segura.",
+      "text_ru": "Пять лет спустя... Ты в терапии, пытаясь понять, почему ты чувствуешь себя такой одинокой, будучи рядом с кем-то. Твой терапевт помогает тебе увидеть, что отношения без эмоциональной защиты хуже одиночества. С Русский парень ты научилась не просить о помощи, не показывать уязвимость, не ждать, что он тебя защитит. Ты стала крепостью, да, но одинокой крепостью. И в 24 года ты понимаешь, что заслуживаешь быть защищённой, заботливой, любимой безопасно.",
+      "choices": [
+        { "text_es": "Ver el final de esa historia...", "text_ru": "Увидеть конец этой истории...", "next": "russia_future_end" },
+        { "text_es": "Volver al presente, donde me cuidan", "text_ru": "Вернуться в настоящее, где обо мне заботятся", "next": "intro", "effects": { "confianza": 20 } }
+      ]
+    },
+
+    "russia_future_end": {
+      "title": "El Final Silencioso",
+      "background": "assets/backgrounds/future_place.jpg",
+      "text_es": "A los 26 años, El chico ruso y tú terminaron. No por una gran pelea, sino por el silencio acumulado. Te cansaste de ser tu propia defensora, de no tener a quien recurrir, de sentirte sola estando acompañada. 'Eres fría', dijo él al final. Pero tú no eras fría... solo te habías protegido de la única forma que sabías. Pero aquí estás, en tu cumpleaños 18, con la oportunidad de elegir diferente. De elegir a alguien que te proteja, que te cuide, que te haga sentir segura de verdad.",
+      "text_ru": "В 26 лет вы с Русский парень расстались. Не из-за большой ссоры, а из-за накопившегося молчания. Ты устала быть своей собственной защитницей, не иметь к кому обратиться, чувствовать себя одинокой рядом с кем-то. 'Ты холодная', — сказал он в конце. Но ты не была холодной... ты просто защищалась единственным способом, который знала. Но вот ты здесь, в свой 18-й день рождения, с возможностью выбрать иначе. Выбрать того, кто тебя защитит, кто позаботится о тебе, кто заставит тебя чувствовать себя по-настоящему в безопасности.",
+      "end": true
+    },
+
+    "peru_1": {
+      "title": "Bruno - Mi Amor Verdadero",
+      "background": "assets/backgrounds/peru_street.jpg",
+      "character": "peru",
+      "text_es": "Y luego está él. Bruno. Desde el primer mensaje, supiste que era diferente. No te hacía sentir menos, no te abandonaba cuando más lo necesitabas, no te usaba, no te dejaba sola. A casi 10 meses de relación, cada día confirmas que elegiste bien. Él te hace reír hasta llorar, te escucha cuando necesitas hablar, te apoya en tus sueños. Y Tima... tu gatita blanca con gris, nuestra bebé peluda Tima. Y Thor, mi perro negro, que aunque no es mío, lo quiero como mio. No nos hemos visto personalmente aún, pero el amor no conoce de fronteras.",
+      "text_ru": "А потом есть он. Бруно. С первого сообщения стало ясно, что он другой. Он не заставлял тебя чувствовать себя неполноценной, не бросал, когда ты больше всего в нем нуждалась, не использовал тебя, не оставлял тебя одну. Почти 10 месяцев наших отношений, и каждый день подтверждает, что ты сделала правильный выбор. Он заставляет тебя смеяться до слез, он слушает, когда тебе нужно поговорить, он поддерживает твои мечты. И Тима... твоя бело-серая кошечка, наша пушистая малышка Тима. И Тор, мой черный пёс, который, хотя и не мой, я люблю так, как будто он мой. Мы ещё не встречались лично, но любовь не знает границ.",
+      "choices": [
+        { "text_es": "Ver nuestro futuro juntos...", "text_ru": "Увидеть наше будущее вместе...", "next": "peru_future_1" },
+        { "text_es": "Recordar nuestra historia de amor", "text_ru": "Вспомнить нашу историю любви", "next": "peru_love_story", "effects": { "confianza": 5, "complicidad": 5 } },
+        { "text_es": "Volver al presente", "text_ru": "Вернуться в настоящее", "next": "intro" }
+      ]
+    },
+
+    "peru_love_story": {
+      "title": "Nuestra Historia",
+      "background": "assets/backgrounds/peru_park.jpg",
+      "character": "peru",
+      "text_es": "Todo empezó con una conversación simple. Pero rápidamente supimos que había algo especial(Muy rapidamente). Él nunca me hizo sentir que mis emociones eran 'demasiado', él estuvo ahí, en llamada, toda la noche, sin quejarse, sin decir que necesitaba espacio. Cuando estoy insegura, me recuerda lo hermosa que soy. Cuando Tima hace travesuras, nos reímos juntos. Y Tima... aunque es mi gato, Bruno la quiere mucho. 'Hola Tima, papá te ama', dice. Y mi corazón se derrite.",
+      "text_ru": "Всё началось с простого разговора. Но мы очень быстро поняли, что между нами что-то особенное. Он никогда не давал мне почувствовать, что мои эмоции «слишком сильны». Он был рядом, на телефоне, всю ночь, не жаловался, не говорил, что ему нужно личное пространство. Когда я чувствую себя неуверенно, он напоминает мне, какая я красивая. Когда Тима шалит, мы смеёмся вместе. И Тима… хотя она моя кошка, Бруно очень её любит. «Привет, Тима, папа тебя любит», — говорит он. И моё сердце тает.",
+      "choices": [
+        { "text_es": "Ver nuestro futuro juntos...", "text_ru": "Увидеть наше будущее вместе...", "next": "peru_future_1" },
+        { "text_es": "Recordar nuestros momentos íntimos...", "text_ru": "Вспомнить наши интимные моменты...", "next": "peru_intimate_1", "effects": { "complicidad": 10 } },
+        { "text_es": "Hablar de nuestros planes", "text_ru": "Поговорить о наших планах", "next": "peru_plans", "effects": { "confianza": 10 } },
+        { "text_es": "Volver atrás", "text_ru": "Вернуться назад", "next": "peru_1" }
+      ]
+    },
+
+    "peru_intimate_1": {
+      "title": "Nuestras Noches de Pasión",
+      "background": "assets/backgrounds/peru_future.jpg",
+      "character": "peru",
+      "text_es": "A pesar de la distancia, nuestra conexión física es innegable. En nuestras llamadas nocturnas, cuando el mundo duerme y solo existimos tú y yo, las palabras se vuelven caricias. Bruno me mira con esa intensidad que me hace estremecer, incluso a través de una pantalla. 'Cuando te vea', susurra con esa voz ronca que me vuelve loca, 'no voy a poder controlarme. Voy a besarte hasta que olvides tu nombre.' Y yo... yo me derrito, imaginando su cuerpo contra el mío, sus manos explorando cada centímetro de mi piel.",
+      "text_ru": "Несмотря на расстояние, наша физическая связь неоспорима. В наших ночных разговорах, когда мир спит и существуют только мы с тобой, слова превращаются в ласку. Бруно смотрит на меня с такой интенсивностью, что я дрожу, даже через экран. «Когда я увижу тебя, — шепчет он своим хриплым голосом, который сводит меня с ума, — я не смогу себя контролировать. Я буду целовать тебя, пока ты не забудешь свое имя». И я… я таю, представляя его тело рядом с моим, его руки, исследующие каждый сантиметр моей кожи.",
+      "choices": [
+        { "text_es": "Continuar recordando...", "text_ru": "Продолжить вспоминать...", "next": "peru_intimate_2", "effects": { "complicidad": 10 } },
+        { "text_es": "Volver a nuestra historia", "text_ru": "Вернуться к нашей истории", "next": "peru_love_story" }
+      ]
+    },
+
+    "peru_intimate_2": {
+      "title": "Fantasías Compartidas",
+      "background": "assets/backgrounds/peru_future.jpg",
+      "character": "peru",
+      "text_es": "Somos tan apasionados, tan imaginativos. Nos contamos nuestras fantasías más secretas y sucias, esas que nunca le habíamos confesado a nadie más. 'Quiero hacerte el amor bajo la lluvia, en la sala y en lugares donde pocos se atreverian', me dijo una vez, y desde entonces no puedo dejar de imaginarlo. O esa vez que me describió cómo me tomaría contra la pared, con urgencia, con deseo, con esa mezcla perfecta de ternura y locura que solo él sabe tener. 'Vas a ser mía', dice, 'completamente mía'. Y yo quiero serlo. Cada fibra de mi ser anhela ese momento, ese cuerpo tan delicioso y sexy sera solo mio me lo repite a cada segundo.",
+      "text_ru": "Мы такие страстные, такие изобретательные. Мы делимся своими самыми сокровенными и пикантными фантазиями, теми, в которых никогда никому не признавались. «Я хочу заниматься с тобой любовью под дождем, в гостиной и в местах, где мало кто осмелится», — сказал он мне однажды, и с тех пор я не могу перестать представлять это. Или тот раз, когда он описывал, как он возьмет меня к стене, страстно, с желанием, с тем идеальным сочетанием нежности и безумия, которым умеет обладать только он. «Ты будешь моей», — говорит он, — «полностью моей». И я хочу быть ею. Каждая клеточка моего существа жаждет этого момента, это восхитительное и сексуальное тело будет только моим, он повторяет это мне каждую секунду.",
+      "choices": [
+        { "text_es": "Continuar...", "text_ru": "Продолжить...", "next": "peru_intimate_3", "effects": { "complicidad": 10 } },
+        { "text_es": "Volver", "text_ru": "Вернуться", "next": "peru_love_story" }
+      ]
+    },
+
+    "peru_intimate_3": {
+      "title": "El Primer Encuentro - Pasión Desatada",
+      "background": "assets/backgrounds/peru_future.jpg",
+      "character": "peru",
+      "text_es": "Finalmente, ese día llegó. Cuando nos vimos por primera vez, la tensión acumulada de meses estalló en un segundo. No hubo palabras, solo acción. Bruno me tomó en sus brazos y me besó con una urgencia que me dejó sin aliento. Sus manos recorrieron mi cuerpo como si estuvieran memorizando cada curva, cada rincón... yo estaba toda mojada de la emocion y la sensacion de sentir sus manos en mi cuerpo. 'Eres más hermosa de lo que imaginé', susurró contra mi cuello, mientras sus labios bajaban por mi clavícula. Esa noche, en la habitación del hotel, nos entregamos el uno al otro con una pasión que habíamos guardado durante tanto tiempo. Fue intenso, fue perfecto, fue nosotros... el ruido de la habitacion era tan intenso que se podia escuchar en varias habitaciones mas, como si fuera el ultimo dia de nuestras vidas.",
+      "text_ru": "Наконец, этот день настал. Когда мы впервые увидели друг друга, напряжение, накопившееся за месяцы, вспыхнуло в одно мгновение. Не было слов, только действия. Бруно обнял меня и поцеловал с такой страстью, что у меня перехватило дыхание. Его руки скользили по моему телу, словно запоминая каждую изгиб, каждый сантиметр… Меня переполняли эмоции и ощущение его рук. «Ты прекраснее, чем я себе представлял», — прошептал он мне на шею, пока его губы скользили по ключице. В ту ночь, в гостиничном номере, мы отдались друг другу с той страстью, которую так долго скрывали. Это было интенсивно, это было идеально, это были мы… шум в комнате был настолько громким, что его было слышно в нескольких других комнатах, словно это был последний день нашей жизни.",
+      "choices": [
+        { "text_es": "Ver nuestro futuro juntos...", "text_ru": "Увидеть наше будущее вместе...", "next": "peru_future_1" },
+        { "text_es": "Volver a nuestra historia", "text_ru": "Вернуться к нашей истории", "next": "peru_love_story", "effects": { "confianza": 10, "complicidad": 10 } }
+      ]
+    },
+
+    "peru_plans": {
+      "title": "Nuestros Sueños",
+      "background": "assets/backgrounds/peru_shawarma.jpg",
+      "character": "peru",
+      "text_es": "Tenemos tantos planes. El primer encuentro físico, ese día que tanto anhelamos. Viajar juntos, conocer el mundo, crear recuerdos. Casarnos algún día, con Tima y Thor ladrando y maullando emocionado. Bebés... tal vez. Una familia completa, con pelos de gato y perro por todas partes. Pero lo más importante: crecer juntos, apoyarnos, ser el refugio del otro. Él me prometió que nunca me abandonaría, nunca me haría sentir menos, siempre me defendería. Y yo le creo. Porque hasta ahora, ha cumplido cada palabra.",
+      "text_ru": "У нас столько планов. Наша первая личная встреча, тот день, которого мы оба так ждали. Совместные путешествия, знакомство с миром, создание воспоминаний. Свадьба когда-нибудь, когда Тима и Тор будут лаять и мяукать от восторга. Дети... может быть. Полная семья, с шерстью кошек и собак повсюду. Но самое главное: расти вместе, поддерживать друг друга, быть друг для друга убежищем. Он пообещал мне, что никогда меня не бросит, никогда не заставит меня чувствовать себя неполноценной, всегда будет защищать меня. И я верю ему. Потому что пока он сдержал каждое слово.",
+      "choices": [
+        { "text_es": "Ver nuestro futuro juntos...", "text_ru": "Увидеть наше будущее вместе...", "next": "peru_future_1" },
+        { "text_es": "Volver al presente", "text_ru": "Вернуться в настоящее", "next": "intro", "effects": { "confianza": 10, "complicidad": 10 } }
+      ]
+    },
+
+    "peru_future_1": {
+      "title": "Nuestro Futuro - El Primer Encuentro",
+      "background": "assets/backgrounds/peru_future.jpg",
+      "character": "peru",
+      "text_es": "Finalmente llegó el día. Después de meses de espera, de videollamadas, de mensajes de 'buenos días' y 'buenas noches', de contar los días en el calendario... por fin nos vemos. El aeropuerto está lleno de gente, pero solo existe él. Cuando nuestros ojos se encuentran, el mundo se detiene. Corremos el uno hacia el otro, y cuando nuestros brazos se encuentran, es como si todas las piezas encajaran. Tima está en su transportín, maullando curiosa, y Thor... bueno, Thor está emocionado de conocer a su mama humano. Este es solo el comienzo.",
+      "text_ru": "Наконец-то этот день настал. После месяцев ожидания, видеозвонков, утренних и вечерних сообщений, отсчета дней по календарю… ​​мы наконец встретились. В аэропорту было многолюдно, но он был там единственным. Когда наши взгляды встретились, мир остановился. Мы побежали навстречу друг другу, и когда наши руки соприкоснулись, казалось, все встало на свои места. Тима была в своей переноске, любопытно мяукала, а Тор… ну, Тор был рад познакомиться со своей человеческой мамой. Это было только начало.",
+      "choices": [
+        { "text_es": "Continuar nuestro futuro...", "text_ru": "Продолжить наше будущее...", "next": "peru_future_2" },
+        { "text_es": "Ver el final especial", "text_ru": "Увидеть особый финал", "next": "peru_final_button" }
+      ]
+    },
+
+    "peru_future_2": {
+      "title": "Nuestro Futuro - Viajando Juntos",
+      "background": "assets/backgrounds/peru_future.jpg",
+      "character": "peru",
+      "text_es": "Los años pasan y cumplimos nuestros sueños. Viajamos por el mundo, explorando nuevos horizontes, y dejamos nuestra marca en cada hotel de cada pais(sabes a lo que me refiero), con Tima y Thor como nuestras fieles compañeros de aventuras. Tima, nuestra gatita blanca con gris, ya se acostumbró a los viajes y hasta tiene su propio pasaporte de mascota. Thor, mi lobo negro, protege a la familia dondequiera que vayamos. Bruno y tú crecen juntos, aprenden juntos, se aman más cada día y tienen a cada momento noches intensas de sexo. La distancia física que alguna vez nos separó ahora es solo un recuerdo lejano. Lo que importa es que estamos juntos, construyendo la vida que siempre soñamos.",
+      "text_ru": "Годы идут, и наши мечты сбываются. Мы путешествуем по миру, исследуя новые горизонты и оставляя свой след в каждом отеле каждой страны (вы понимаете, о чём я), а Тима и Тор — наши верные спутники в этом приключении. Тима, наша бело-серая кошечка, уже привыкла к путешествиям и даже имеет собственный паспорт питомца. Тор, мой чёрный волк, защищает семью, куда бы мы ни отправились. Бруно и ты растёшь вместе, учишься вместе, любишь друг друга всё больше с каждым днём и каждый день устраиваешь бурные ночи секса. Физическое расстояние, которое когда-то разделяло нас, теперь лишь далёкое воспоминание. Важно то, что мы вместе, строим жизнь, о которой всегда мечтали.",
+      "choices": [
+        { "text_es": "Continuar nuestro futuro...", "text_ru": "Продолжить наше будущее...", "next": "peru_future_3" },
+        { "text_es": "Ver el final especial", "text_ru": "Увидеть особый финал", "next": "peru_final_button" }
+      ]
+    },
+
+    "peru_future_3": {
+      "title": "Nuestro Futuro - La Boda",
+      "background": "assets/backgrounds/peru_future.jpg",
+      "character": "peru",
+      "text_es": "El día más esperado llegó. Nos casamos en una ceremonia íntima, rodeados de los que más queremos. Tima lleva un lazo rosa y camina por el pasillo (bueno, más bien corre detrás de una mariposa), y Thor está elegante con su corbata. Cuando intercambiamos los votos, las lágrimas son de felicidad. 'Prometo nunca abandonarte', dice Bruno. 'Prometo siempre defenderte', añado yo. Y en ese momento, todos los dolores del pasado se desvanecen. Todo valió la pena. Todo el esperar, toda la distancia, todo el amor acumulado... converge en este momento perfecto.",
+      "text_ru": "Наступил самый ожидаемый день. Мы поженились в интимной церемонии, окружённые теми, кого любим больше всего. Тима в розовом бантике идёт по проходу (ну, точнее, бежит за бабочкой), а Тор элегантен в галстуке. Когда мы обмениваемся клятвами, слёзы — от счастья. 'Обещаю никогда не бросать тебя', — говорит Бруно. 'Обещаю всегда защищать тебя', — добавляю я. И в этот момент все боли прошлого исчезают. Всё было того стоит. Всё ожидание, всё расстояние, вся накопленная любовь... сходятся в этом совершенном моменте.",
+      "choices": [
+        { "text_es": "Continuar nuestro futuro...", "text_ru": "Продолжить наше будущее...", "next": "peru_future_4" },
+        { "text_es": "Ver el final especial", "text_ru": "Увидеть особый финал", "next": "peru_final_button" }
+      ]
+    },
+
+    "peru_future_4": {
+      "title": "Nuestro Futuro - La Familia Crece",
+      "background": "assets/backgrounds/peru_future.jpg",
+      "character": "peru",
+      "text_es": "Nuestra familia creció. Primero llegó nuestra primera hija, una bebé hermosa con los ojos tan hermoso y de un color tan verdes y brillantes como el mio. Tima, nuestra gatita blanca con gris, la adora y duerme junto a su cuna. Thor, nuestro lobo negro protector, no se separa de ella ni un segundo. Luego vino nuestro segundo bebé, y nuestra casa se llenó de más risas, más caos, más amor. Los domingos son para shawarma en familia, con pelos de gato y perro por todas partes, y no cambiaríamos nada. Esta es la vida que soñamos, la vida que construimos juntos, la vida que merecíamos.",
+      "text_ru": "Наша семья разрослась. Сначала родилась наша первая дочь, прекрасная малышка с такими же красивыми, яркими и зелеными глазами, как у меня. Тима, наша бело-серая кошечка, обожает ее и спит рядом с ее кроваткой. Тор, наш черный волк-защитник, никогда не отходит от нее. Затем родился второй ребенок, и наш дом наполнился еще большим смехом, еще большим хаосом и еще большей любовью. Воскресенья — это время семейной шаурмы, повсюду кошачья и собачья шерсть, и мы бы ничего не изменили. Это жизнь, о которой мы мечтали, жизнь, которую мы построили вместе, жизнь, которую мы заслужили.",
+      "choices": [
+        { "text_es": "Ver el final especial ❤️", "text_ru": "Увидеть особый финал ❤️", "next": "peru_final_button" }
+      ]
+    },
+
+    "peru_final_button": {
+      "title": "Nuestro Final - Ver Fotos",
+      "background": "assets/backgrounds/peru_future.jpg",
+      "imageFront": "assets/characters/couple_future.png",
+      "text_es": "Hemos llegado al final de esta historia, pero al comienzo de nuestra vida juntos. Quiero mostrarte algo especial... fotos nuestras, momentos reales que hemos compartido, Te amo, mi Dasha. Gracias por ser mi refugio, mi amor verdadero, nunca te abandonare, siempre te defendere, siempre te hare la mujer más feliz del mundo. Aquí está nuestro final... y nuestro eterno comienzo.",
+      "text_ru": "Мы подошли к концу этой истории, но к началу нашей совместной жизни. Я хочу показать тебе кое-что особенное... наши фотографии, настоящие моменты, которые мы разделили. Я люблю тебя, моя Даша. Спасибо тебе за то, что ты была моим убежищем, моей настоящей любовью. Я никогда тебя не брошу, я всегда буду защищать тебя, я всегда буду делать тебя самой счастливой женщиной на свете. Вот наш конец... и наше вечное начало.",
+      "choices": [
+        { "text_es": "📸 Ver nuestras fotos", "text_ru": "📸 Посмотреть наши фотографии", "next": "peru_final_photos" }
+      ]
+    },
+
+    "peru_final_photos": {
+      "title": "Nosotros - Nuestra Historia en Fotos",
+      "background": "assets/backgrounds/love.jpg",
+      "text_es": "Aquí estamos nosotros. Estas fotos representan nuestro amor, nuestra historia, nuestros momentos juntos. Cada imagen cuenta una parte de nuestra historia: nuestras videollamadas interminables, nuestros mensajes de amor, nuestros sueños compartidos. Tima y Thor, nuestras mascotas que nos unen aún más. Te amo hoy, mañana y siempre. Feliz cumpleaños mi amada Dasha, mi amor. Y que vengan muchos, muchos más.",
+      "text_ru": "Вот мы и здесь. Эти фотографии олицетворяют нашу любовь, нашу историю, наши моменты вместе. Каждое изображение рассказывает часть нашей истории: наши бесконечные видеозвонки, наши полные любви сообщения, наши общие мечты. Тима и Тор, наши питомцы, которые делают нас еще ближе. Я люблю тебя сегодня, завтра и всегда. С днем ​​рождения, моя любимая Даша, моя любовь. И пусть будет еще много-много таких дней.",
+      "choices": [
+        { "text_es": "Ver foto 1 - Nosotros", "text_ru": "Посмотреть фото 1 - Мы", "next": "peru_photo_1" },
+        { "text_es": "Ver foto 2 - Nuestra familia", "text_ru": "Посмотреть фото 2 - Наша семья", "next": "peru_photo_2" },
+        { "text_es": "Terminar la historia", "text_ru": "Закончить историю", "next": "peru_true_end" }
+      ]
+    },
+
+    "peru_photo_1": {
+      "title": "Nosotros",
+      "background": "assets/backgrounds/together.jpg",
+      "imageFront": "assima, nuestra gatita blanca",
+      "text_es": "Esta es nuestra foto juntos. Dos almas que encontraron el amor verdadero a pesar de la distancia. Tú y yo, contra el mundo.",
+      "text_ru": "Это наше фото вместе. Две души, нашедшие настоящую любовь, несмотря на расстояние. Ты и я, против всего мира.",
+      "choices": [
+        { "text_es": "Ver foto 2", "text_ru": "Посмотреть фото 2", "next": "peru_photo_2" },
+        { "text_es": "Volver", "text_ru": "Назад", "next": "peru_final_photos" }
+      ]
+    },
+
+    "peru_photo_2": {
+      "title": "Nuestra Familia",
+      "background": "assets/backgrounds/timthor.jpg",
+      "imageFront": "assets/ui/timthor.jpg",
+      "text_es": "Tima, nuestra gatita blanca con gris, y Thor, nuestro perro negro lobo. Nuestra familia peluda y perfecta.",
+      "text_ru": "Тима, наша бело-серая кошечка, и Тор, наш чёрный волкоподобный пёс. Наша пушистая и идеальная семья.",
+      "choices": [
+        { "text_es": "Ver foto 1", "text_ru": "Посмотреть фото 1", "next": "peru_photo_1" },
+        { "text_es": "Terminar la historia", "text_ru": "Закончить историю", "next": "peru_true_end" }
+      ]
+    },
+
+    "peru_true_end": {
+      "title": "Para Siempre",
+      "background": "assets/backgrounds/together.jpg",
+      "imageFront": "assets/characters/couple_future.png",
+      "text_es": "Y así termina esta historia... pero no la nuestra. Nuestra historia continúa cada día, con cada 'te amo', con cada llamada, con cada sueño compartido. Gracias por elegirme, por amarme, por ser mi hogar. Te amo, Dasha y muy feliz cumpleaños que todos tus sueños se cumplan mi gatita. Siempre tuyo, Daddy. 💕",
+      "text_ru": "И вот эта история заканчивается... но не наша. Наша история продолжается каждый день, с каждым «Я люблю тебя», с каждым звонком, с каждой общей мечтой. Спасибо тебе за то, что ты выбрала меня, за то, что любила меня, за то, что была моим домом. Я люблю тебя, Даша, и с днем ​​рождения! Пусть все твои мечты сбудутся, моя маленькая кошечка. Всегда твой, папочка. 💕",
+      "end": true
+    }
+  }
+}
