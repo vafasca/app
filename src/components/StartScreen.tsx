@@ -17,7 +17,7 @@ export function StartScreen({
 }: StartScreenProps) {
   const texts = {
     es: {
-      title: 'Flores, Gatitos y Shawarma',
+      title: 'Feliz Cumpleaños princesa!',
       subtitle: 'Una novela visual sobre el amor y las decisiones',
       newGame: 'Nueva Partida',
       continue: 'Continuar',
@@ -25,7 +25,7 @@ export function StartScreen({
       names: 'Dasha & Bruno',
     },
     ru: {
-      title: 'Цветы, Котята и Шаверма',
+      title: 'С днем ​​рождения, принцесса!',
       subtitle: 'Визуальная новелла о любви и решениях',
       newGame: 'Новая Игра',
       continue: 'Продолжить',
