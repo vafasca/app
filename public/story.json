@@ -16,11 +16,11 @@
       "text_es": "Hoy cumples 18 años. En la mesa hay un ramo de flores frescas, un gatito naranja curioseando entre los regalos, y el aroma tentador de un shawarma recién comprado. Tu corazón late con fuerza mientras recuerdas historias pasadas... momentos que marcaron tu vida y personas que dejaron huella. Algunas heridas aún duelen, pero también aprendiste a reconocer el amor verdadero cuando llegó.",
       "text_ru": "Сегодня тебе исполняется 18 лет. На столе стоит букет свежих цветов, рыжий котёнок любопытно нюхает подарки, и витает соблазнительный аромат свежей шавермы. Твоё сердце сильно бьётся, когда ты вспоминаешь прошлые истории... моменты, которые изменили твою жизнь, и людей, которые оставили след. Некоторые раны всё ещё болят, но ты также научилась узнавать настоящую любовь, когда она пришла.",
       "choices": [
-        { "text_es": "Recordar al chico indio... y cómo me abandonó", "text_ru": "Вспомнить индийского парня... и как он меня бросил", "next": "india_1" },
-        { "text_es": "Pensar en el chico de Pakistán... que nunca me valoró", "text_ru": "Подумать о пакистанском парне... который никогда не ценил меня", "next": "pakistan_1" },
-        { "text_es": "Volver a hablar con el chico japonés... que solo me usaba", "text_ru": "Снова поговорить с японским парнем... который просто использовал меня", "next": "japan_1" },
-        { "text_es": "Recordar al chico ruso... que nunca me protegió", "text_ru": "Вспомнить русского парня... который никогда не защищал меня", "next": "russia_1" },
-        { "text_es": "Quedarme con Bruno de Perú... mi amor verdadero", "text_ru": "Остаться с Бруно из Перу... моя настоящая любовь", "next": "peru_1" }
+        { "text_es": "Recordar al chico indio...", "text_ru": "Вспомнить индийского парня...", "next": "india_1" },
+        { "text_es": "Pensar en el chico de Pakistán...", "text_ru": "Подумать о пакистанском парне... ", "next": "pakistan_1" },
+        { "text_es": "Volver a hablar con el chico japonés...", "text_ru": "Снова поговорить с японским парнем... ", "next": "japan_1" },
+        { "text_es": "Recordar al chico ruso...", "text_ru": "Вспомнить русского парня... ", "next": "russia_1" },
+        { "text_es": "Quedarme con Bruno de Perú... mi amor unico y verdadero", "text_ru": "Остаться с Бруно из Перу... моей единственной и настоящей любви.", "next": "peru_1" }
       ]
     },
 
